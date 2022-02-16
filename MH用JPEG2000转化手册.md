@@ -17,7 +17,8 @@
 默认的安装路径为 ~/.local/lib/python3.8/site-packages（取决于系统Python的版本）
 
 ### 1.5 安装Kakadu
-kakadu是处理JPEG2000压缩程序的核心部分，来自于kakadusoftware.com。将kakadu文件夹拷贝至/opt/kakadu.
+kakadu是处理JPEG2000压缩程序的核心部分，来自于kakadusoftware.com。
+将kakadu文件夹拷贝至/opt/kakadu。
 
 ## 2. 转成JPEG2000
 
