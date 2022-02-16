@@ -30,7 +30,9 @@ LOSSLESS_OPTIONS = [
 DEFAULT_LOSSLESS_COMPRESS_OPTIONS = DEFAULT_COMPRESS_OPTIONS + LOSSLESS_OPTIONS
 """Default lossless command line options for :func:`~image_processing.kakadu.Kakadu.kdu_compress`"""
 
-LOSSY_OPTIONS = ["-rate", '1.1']
+"""The following parameter 1.09 cames from http://www.dlxs.org/docs/12a/class/image/jpeg2000.html"""
+"""that can generate a JPEG2000 compressed JP2 file with roughly 20:1 compression."""
+LOSSY_OPTIONS = ["-rate", '1.09']
 """:func:`~image_processing.kakadu.Kakadu.kdu_compress` command line options which make the compression lossy"""
 
 DEFAULT_LOSSY_COMPRESS_OPTIONS  = DEFAULT_COMPRESS_OPTIONS + LOSSY_OPTIONS
