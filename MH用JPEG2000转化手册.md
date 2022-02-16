@@ -44,7 +44,11 @@ main-convert.py中的内容如下：
         
 其中，SOURCE_FOLDER为原图所在目录， OUTPUT_FOLDER为输出目录，每次转化时按需要更改目录。
 
-注意：TIFF所在外部磁盘的格式均为NTFS，挂载至Ubuntu Linux系统时需要安装paragon-ntfs以实现自动挂载。具体参见paragon-ntfs相关的文档。
+开始转化：
+
+    cd ~ && python3 main-convert.py
+
+**注意**：TIFF所在外部磁盘的格式均为NTFS，挂载至Ubuntu Linux系统时需要安装paragon-ntfs以实现自动挂载。具体参见paragon-ntfs相关的文档。
 
 ## 3. 代码更新时如何处理
 如果代码更改，开发人员mengjinzhao会将更新后的代码同步至 https://github.com/mengjinzhao/image-processing.git ，使用人员按照以下步骤更新：
