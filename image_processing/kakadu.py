@@ -30,9 +30,10 @@ LOSSLESS_OPTIONS = [
 DEFAULT_LOSSLESS_COMPRESS_OPTIONS = DEFAULT_COMPRESS_OPTIONS + LOSSLESS_OPTIONS
 """Default lossless command line options for :func:`~image_processing.kakadu.Kakadu.kdu_compress`"""
 
-LOSSY_OPTIONS = ["-rate", '3']
+LOSSY_OPTIONS = ["-rate", '1.1']
 """:func:`~image_processing.kakadu.Kakadu.kdu_compress` command line options which make the compression lossy"""
 
+DEFAULT_LOSSY_COMPRESS_OPTIONS  = DEFAULT_COMPRESS_OPTIONS + LOSSY_OPTIONS
 ALPHA_OPTION = '-jp2_alpha'
 """:func:`~image_processing.kakadu.Kakadu.kdu_compress` command line option for images with alpha channels"""
 
