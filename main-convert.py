@@ -1,8 +1,9 @@
-#!/Users/jinzhao/opt/anaconda3/bin/python3
+#!/usr/bin/python3
 import os
 from image_processing.derivative_files_generator import DerivativeFilesGenerator
 
-derivatives_gen = DerivativeFilesGenerator(kakadu_base_path="/Library/Kakadu/8.0.5/bin/")
+derivatives_gen = DerivativeFilesGenerator(kakadu_base_path="/opt/kakadu/")
+
 SOURCE_FOLDER = "/Users/jinzhao/Work"
 OUTPUT_FOLDER = "/Users/jinzhao/OUTPUT"
 
