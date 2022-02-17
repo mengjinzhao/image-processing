@@ -32,14 +32,18 @@ kakadu是处理JPEG2000压缩程序的核心部分，来自于kakadusoftware.com
 
     cd ~ && git clone https://github.com/mengjinzhao/image-processing.git
 
-主入口程序 main-convert.py 在 ~/image-processing/ 下，使用文本编辑器或者PyCharm 打开找到如下两行：
+拷贝入口程序 main-convert.py 至主目录：
+
+    cp ~/image-processing/main-convert.py ~/
+
+使用文本编辑器或者 PyCharm 打开 ~/main-convert.py，找到如下两行：
 
     SOURCE_FOLDER = "/media/jinzhao/sda4/SOURCE"
     OUTPUT_FOLDER = "/media/jinzhao/sda4/OUTPUT"
 
-其中，SOURCE_FOLDER 为原图所在路径， OUTPUT_FOLDER 为输出路径，每次转化时按需要更改目录，在 PyCharm 中修改后可以直接运行，或者在命令行下运行：
+其中，SOURCE_FOLDER 为原图所在路径， OUTPUT_FOLDER 为输出路径，每次转化时按需要更改目录，在 PyCharm 中修改后可以直接运行，或者直接在命令行下运行：
 
-    python3 ~/image-processing/main-convert.py
+    python3 ~/main-convert.py
 
 **注意**：TIFF 所在外部磁盘的格式均为 NTFS，挂载至 Ubuntu Linux 系统时需要安装 paragon-ntfs 以实现自动挂载。具体请参见paragon-ntfs相关的文档。
 
