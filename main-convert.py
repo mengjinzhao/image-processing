@@ -10,5 +10,5 @@ OUTPUT_FOLDER = "/Users/jinzhao/OUTPUT"
 tif_files = os.listdir(SOURCE_FOLDER)
 tif_files.sort()
 for tif_file in tif_files:
-        tif_path = os.path.join(SOURCE_FOLDER, tif_file)
-        derivatives_gen.generate_derivatives_from_tiff(tif_path, OUTPUT_FOLDER)
+    tif_path = os.path.join(SOURCE_FOLDER, tif_file)
+    derivatives_gen.generate_derivatives_from_tiff(tif_path, OUTPUT_FOLDER)
