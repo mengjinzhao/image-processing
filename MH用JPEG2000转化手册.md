@@ -12,7 +12,7 @@
 
 ### 1.3 安装image_processing
 
-    pip instll git+https://github.com/mengjinzhao/image-processing.git
+    pip install git+https://github.com/mengjinzhao/image-processing.git
 
 默认的安装路径为 ~/.local/lib/python3.8/site-packages/image_processing（取决于系统Python的版本）
 
