@@ -31,7 +31,7 @@ for tif_file in tif_files:
         print(tif_path + " 使用了 LZW 压缩，即将处理该图片为无损 TIFF 格式。")
         tmp_tif_path = os.path.join(TMP_FOLDER, tif_file)
         gdal.Translate(tmp_tif_path, tif_path, options = GDAL_OPTIONS)
-        print("已经将 " + tif_path + " 扩展为无压缩 TIFF，临时存放处为 " + tmp_tif_path + "并转换为 JP2 格式。")
+        print("已经将 " + tif_path + " 扩展为无损 TIFF，临时存放处为 " + tmp_tif_path + "，并转换为 JP2 格式。")
         
         derivatives_gen.generate_derivatives_from_tiff(tmp_tif_path, OUTPUT_FOLDER)
         print("转换 " + tmp_tif_path + " 为 JP2 格式完毕。")
