@@ -15,7 +15,7 @@ SOURCE_FOLDER = "/Users/jinzhao/Work"
 TMP_FOLDER = "/Users/jinzhao/TMP"
 OUTPUT_FOLDER = "/Users/jinzhao/OUTPUT"
 
-GDAL_OPTIONS = "-co PROFILE=BASELINE -co COMPRESS=NONE"
+GDAL_OPTIONS = "-co PROFILE=GeoTIFF -co COMPRESS=NONE"
 
 tif_files = os.listdir(SOURCE_FOLDER)
 tif_files.sort()
@@ -30,7 +30,7 @@ for tif_file in tif_files:
     else:
         print(tif_path + " 使用了 LZW 压缩，即将处理该图片为无损 TIFF 格式。")
         tmp_tif_path = os.path.join(TMP_FOLDER, tif_file)
-        gdal.Translate(tmp_tif_path, tif_path, options = GDAL_OPTIONS)
+        gdal.Translate(tmp_tif_path, tif_path, options=GDAL_OPTIONS)
         print("已经将 " + tif_path + " 扩展为无损 TIFF，临时存放处为 " + tmp_tif_path + "，并转换为 JP2 格式。")
         
         derivatives_gen.generate_derivatives_from_tiff(tmp_tif_path, OUTPUT_FOLDER)
