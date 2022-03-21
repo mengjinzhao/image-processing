@@ -7,6 +7,13 @@ from image_processing.derivative_files_generator import DerivativeFilesGenerator
 
 derivatives_gen = DerivativeFilesGenerator(kakadu_base_path="/Library/Kakadu/8.0.5/bin")
 
+"""
+ ！！！注意！！！每次使用时只改动以下 3 行即可。
+ SOURCE_FOLDER：输入图片的路径
+ TMP_FOLDER：临时存放转出的无损 TIFF 图片的路径
+ OUTPUT_FOLDER：输出 JP2 格式图片的路径
+"""
+
 SOURCE_FOLDER = "/Users/jinzhao/Work"
 TMP_FOLDER = "/Users/jinzhao/TMP"
 OUTPUT_FOLDER = "/Users/jinzhao/OUTPUT"
