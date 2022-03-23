@@ -25,9 +25,9 @@ done
 
 #删除名称中含有“封底”、“封面”、“空白”、“书脊”、“书签”的tif文件
 find $DES_DIR -type f -name *封底*.tif -exec rm {} +
-find $DES_DIR -type f -name*封面*.tif -exec rm {} +
-find $DES_DIR -type f -name*空白*.tif -exec rm {} +
-find $DES_DIR -type f -name*书脊*.tif -exec rm {} +
-find $DES_DIR -type f -name*书签*.tif -exec rm {} +
+find $DES_DIR -type f -name *封面*.tif -exec rm {} +
+find $DES_DIR -type f -name *空白*.tif -exec rm {} +
+find $DES_DIR -type f -name *书脊*.tif -exec rm {} +
+find $DES_DIR -type f -name *书签*.tif -exec rm {} +
 find $DES_DIR -type f -name *书底*.tif -exec rm {} +
 find $DES_DIR -type f -name *书面*.tif -exec rm {} +
