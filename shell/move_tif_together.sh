@@ -17,15 +17,17 @@ do
     rmdir $SUB_DIR/TIFF
 
     #删除以月份命名的文件夹下的JPG文件
-    find $SUB_DIR/JPG -type -f *.jpg -exec rm {} +
+    find $SUB_DIR/JPG -type f *.jpg -exec rm {} +
 
     #删除JPG文件夹
     rmdir $SUB_DIR/JPG
 done
 
 #删除名称中含有“封底”、“封面”、“空白”、“书脊”、“书签”的tif文件
-find $DES_DIR -type f *封底*.tif -exec rm {} +
-find $DES_DIR -type f *封面*.tif -exec rm {} +
-find $DES_DIR -type f *空白*.tif -exec rm {} +
-find $DES_DIR -type f *书脊*.tif -exec rm {} +
-find $DES_DIR -type f *书签*.tif -exec rm {} +
+find $DES_DIR -type f -name *封底*.tif -exec rm {} +
+find $DES_DIR -type f -name*封面*.tif -exec rm {} +
+find $DES_DIR -type f -name*空白*.tif -exec rm {} +
+find $DES_DIR -type f -name*书脊*.tif -exec rm {} +
+find $DES_DIR -type f -name*书签*.tif -exec rm {} +
+find $DES_DIR -type f -name *书底*.tif -exec rm {} +
+find $DES_DIR -type f -name *书面*.tif -exec rm {} +
