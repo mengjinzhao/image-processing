@@ -17,7 +17,7 @@ do
     rmdir $SUB_DIR/TIFF
 
     #删除以月份命名的文件夹下的JPG文件
-    find $SUB_DIR/JPG -type f *.jpg -exec rm {} +
+    find $SUB_DIR/JPG -type f -name *.jpg -exec rm {} +
 
     #删除JPG文件夹
     rmdir $SUB_DIR/JPG
